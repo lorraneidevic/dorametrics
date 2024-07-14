@@ -56,7 +56,6 @@ def fetch_commits_from_branch(repo_name: str, branch_sha: str) -> list[str]:
         commits.append(commit_data['author']['date'])
         current_sha = commit_data['parents'][0]['sha']
 
-    print(commits)
     return commits
 
 
